@@ -29,7 +29,9 @@ const themeStore = useThemeStore();
 const router = useRouter();
 
 const menuItems = [
-  { path: '/home', title: '首页' }
+  { path: '/home', title: '首页' },
+  { path: '/price', title: '价格' },
+  { path: '/contact', title: '联系我们' }
 ];
 
 const handleMenuClick = (path: string) => {
@@ -59,7 +61,7 @@ const handleMenuClick = (path: string) => {
       <GlobalBreadcrumb v-if="!appStore.isMobile" class="ml-12px" />
     </div>
     <div class="h-full flex-y-center justify-end">
-      <GlobalSearch />
+      <!-- <GlobalSearch /> -->
       <LangSwitch
         v-if="themeStore.header.multilingual.visible"
         :lang="appStore.locale"

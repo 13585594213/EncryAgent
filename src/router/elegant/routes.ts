@@ -40,6 +40,15 @@ export const generatedRoutes: GeneratedRoute[] = [
     }
   },
   {
+    name: 'contact',
+    path: '/contact',
+    component: 'layout.base$view.contact',
+    meta: {
+      title: 'contact',
+      i18nKey: 'route.contact'
+    }
+  },
+  {
     name: 'home',
     path: '/home',
     component: 'layout.base$view.home',
@@ -71,6 +80,15 @@ export const generatedRoutes: GeneratedRoute[] = [
       i18nKey: 'route.login',
       constant: true,
       hideInMenu: true
+    }
+  },
+  {
+    name: 'price',
+    path: '/price',
+    component: 'layout.base$view.price',
+    meta: {
+      title: 'price',
+      i18nKey: 'route.price'
     }
   }
 ];
